@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<h1>Урок "Формы": теги и их атрибуты.</h1>
+<h2>Расскажите немного о себе...</h2>
+<form>
+    <fieldset>
+        <legend>Коротко о себе</legend>
+        <p><label for="name">Имя </label><input type="text" id="name"></p>
+        <p><label for="email">Фамилия </label><input type="email" id="email"></p>
+        <p>Пол:  <input type="checkbox" checked name="option2" value="a2">Мужской
+            <input type="checkbox" name="option3" value="a3">Женский </p>
+        <p><label for="name">Возраст </label><input type="text" > лет</p>
+    </fieldset>
+
+</form>
+<br>
+<form>
+    <fieldset>
+        <legend>Подробнее о себе</legend>
+        <input type="checkbox" checked name="option2" value="a2">молодой человек<br>
+        <input type="checkbox" name="option3" value="a3">девушка
+
+        <p><input type="text" ><label for="name">Дата рождения </label></p>
+        <p><input type="text" ><label for="name">семейное положение </label></p>
+        <p><input type="text" ><label for="name">социальный статус </label></p>
+        <p><input type="text" ><label for="name">местожительство </label></p>
+        <h3>Что вы обычно делаете на выходных</h3>
+        <input type="checkbox"  name="option2" value="a2">Сплю<br>
+        <input type="checkbox" name="option3" value="a3">гуляю с друзями<br>
+        <input type="checkbox"  name="option2" value="a2">хожу на рыбалку<br>
+        <input type="checkbox" name="option3" value="a3">играю в игры<br>
+        <h3>Что вы обычно делаете на выходных</h3>
+        <select name="hero">
+            <option value="s1">Site frequency</option>
+            <option value="s2" selected>Site frequency</option>
+            <option value="s3">Site frequency</option>
+            <option value="s3" >Site frequency</option>
+        </select>
+        <h3>Сколько книг вы прочитали за всю жизнь</h3>
+        <input type="checkbox"  name="option2" value="a2">0-10<br>
+        <input type="checkbox" name="option3" value="a3">11-20<br>
+        <input type="checkbox"  name="option2" value="a2">21-50<br>
+        <input type="checkbox" name="option3" value="a3">100<br>
+        <h3>Ваши коментарии</h3>
+        <p><textarea rows="10" cols="45" name="text"></textarea></p>
+        <select name="select" size="3" multiple>
+            <option selected value="s1">первая позиция</option>
+            <option value="s2">вторая позиция</option>
+            <option value="s3">третья позиция</option>
+        </select>
+    </fieldset>
+</form>
+<br>
+<form>
+    <fieldset>
+        <legend>И в заключении</legend>
+        <p><input type="text" placeholder="Это поле введено до вас" ></p>
+        <h3>Email</h3>
+        <input type="email"  >
+        <h3>Хотите подписатся на самую модную рассылку спама?</h3>
+        <i>Выберите категорию</i><br>
+        <input type="checkbox"  name="option2" value="a2">Оборудование<br>
+        <input type="checkbox" name="option3" value="a3">как приготовить обед?<br>
+        <input type="checkbox"  name="option2" value="a2">заработай милион за два дня<br>
+        <h3>насколько сложная задача?</h3>
+        <input type="radio"  name="option2" value="a2">севсем нет<br>
+        <input type="radio" name="option3" value="a3">так себе<br>
+        <input type="radio"  name="option2" value="a2">еле справились<br>
+    </fieldset>
+</form>
+
+<p><button>отправить</button></p>
+</body>
+</html>
